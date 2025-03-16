@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtmaYoga</title>
+    <link rel="icon" href="./Images/Login/icn.png" type="image/icon type">
+<link rel="stylesheet" href="home.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body onload="myload()">
+<div class="loader-container" id = "loader">
+    <img src="./Images/Home/image_processing20201120-15530-vodl8x.gif">
+    
+</div>
+
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>AtmaYoga</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="#" onclick="openAbout()">About</a>
+            <a href="team.html" >Team</a>
+            <a href="book.html">Books</a>
+            <a href="./Podcasts&Videos.html">Podcasts&Videos</a>
+            <a href="contact.html" id="feedback">Contact</a>
+            <a href="./login.html">Login/Signup</a>
+            
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+    </header>
+    <div class="back">
+    <div class="container1" id="co1">
+        <div class="post">
+            <div class="text">Thanks for Rating us!</div>
+            <div class="edit">Edit</div>
+            <i class="fas fa-times" id="close"></i>
+    
+        </div>
+        <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <i class="fas fa-times" id="close"></i>
+            <h4></h4>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience"></textarea>
+    
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+        </div>    
+    </div>
+    </div>
+    <!-- Header section ends-->
+
+    
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close1"></i>
+    </form>
+    
+
+    <!--Home section start-->
+    <section class="home" id="home-section">
+<!--Add-->
+<div class="add">
+ <div class="add-container">
+ <img src="./Images/Home/1.jpg">
+ <div class="textimg"><h2>Welcome to AtmaYoga</h2><p>Your Ultimate Resource for Yoga and Wellness</p>
+ <a href=""><button class="ordr">Read More</button></a></div>
+ 
+ </div>
+</div>
+<!--Add ends-->
+<!--Restaurants-->
+<div class="res">
+    <h2></h2>
+    <hr class="line">
+</div>
+
+<section class="barb" id="biryani">
+    <h1 class="barbeque">Our Services</h1>
+    <hr class="line"> 
+    <div class="box-container">
+    <div class="box">
+        <a href="#"><img src="./Images/Home/Books.jpg"></a>
+        <h3>Books</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Learn and Explore Books here.</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./Podcasts&Videos.html"><img src="./Images/Home/V.jpg"></a>
+        <h3>Videos</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Learn from Visuals by Videos</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./Podcasts&Videos.html"><img src="./Images/Home/P.jpg"></a>
+        <h3>Podcasts</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Learn from audio by Podcasts</p> 
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="#"><img src="./Images/Home/Bot.jpg"></a>
+        <h3>Chatbot</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>24/7 Chat assistant</p>
+
+        </div>
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+       
+        </div>
+       
+        </div>
+        
+        </div>
+        
+        </div>
+        
+
+        </div>
+        </section>
+
+        <div class="homepage-block-4">
+            <div class="homepage-block-4-content">
+                <div class="left-section">
+                    <h2>Explore our yoga poses</h2>
+                    <div class="description">Yoga is essentially a spiritual discipline based on an extremely subtle science, which focuses on bringing harmony between mind and body. It is an essential part of healthy living.</div>
+                    <a href="#" class="link"> See more </a>
+                </div>
+                <div class="right-section">
+                    <div class="square_block">
+                        <img src="./Images/Home/Animation - 1720725941547.gif" height="50"> 
+                        <h4>Standing Asanas</h4>
+                        <p>The standing asanas are the yoga poses or asanas with one or both feet on the ground, and the body more or less upright.</p>
+                    </div>
+                    <div class="square_block">
+                        <img src="./Images/Home/image_processing20201120-15530-vodl8x.gif" height="50"> 
+                        <h4>Sitting Asanas</h4>
+                        <p>Sitting yoga asanas involve a lower risk of falling and injury. They are ideal for improving flexibility and strength in your lower body.</p>
+                    </div>
+                    <div class="square_block">
+                        <img src="./Images/Home/image_processing20201120-15530-vodl8x.gif" height="50"> 
+                        <h4>Prone Asana</h4>
+                        <p>Prone poses are postures performed with the belly or torso touching or facing the floor. Most prone yoga poses are backbends, which energize the body and strengthen the heart and lungs.</p>
+                    </div>
+                    <div class="square_block">
+                        <img src="./Images/Home/1.gif" height="50"> 
+                        <h4>Supine Asana</h4>
+                        <p>In yoga, supine is the position in which the spine is supported while maintaining its natural shape. The other additional support is for encouraging the spine to be neutral. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </body>
+
+        <div class="spl">
+            <h2>Top Books</h2>
+    </div>
+
+    <div class="table">
+        <a href="#"><img src="./Images/Home/Animation - 1720725716289.gif" height="150"><h4></h4></a>
+        <a href="#"><img src="book1.png" height="150" width="225px"><h4>Yoga Sutras</h4></a>
+        <a href="#"><img src="book2.png" height="150" width="225px"><h4>Breathing Book</h4></a>
+        <a href="#"><img src="book3.png" height="150" width="225px"><h4>Light on Yoga</h4></a>
+        <a href="#"><img src="book4.png" height="150" width="225px"><h4>Mindfullness</h4></a>
+        <a href="#"><img src="book5.png" height="150" width="225px"><h4>Hatha Yoga</h4></a>
+
+        
+    </div>
+    <div class="spl">
+        <h2>Top Videos</h2>
+</div>
+<div class="table">
+    <a href="#"><img src="./Images/Home/Animation - 1720725344607.gif" height="150"><h4></h4></a>
+    <a href="#"><img src="./Images/Q.jpg" height="150"><h4>Adho Mukha Svanasana</h4></a>
+    <a href="#"><img src="./Images/W.jpg" height="150"><h4>Adho Mukha Vrkasana</h4></a>
+    <a href="#"><img src="./Images/10.jpg" height="150"><h4>Dhanurasana</h4></a>
+    <a href="#"><img src="./Images/9.jpg" height="150"><h4>Ananthasana</h4></a>
+    <a href="#"><img src="./Images/8.jpg" height="150"><h4>Anjaneyasana</h4></a>
+    
+</div>
+<div class="spl">
+    <h2>Top Podcasts</h2>
+</div>
+<div class="table">
+    <a href="#"><img src="./Images/Home/Animation - 1720726226730.gif" height="150"><h4></h4></a>
+    <a href="#"><img src="./Images/C.jpg" height="150"><h4>Jivamukti Yoga</h4></a>
+    <a href="#"><img src="./Images/B.jpg" height="150"><h4>Yoga Girl Daily</h4></a>
+    <a href="#"><img src="./Images/D.jpg" height="150"><h4>Yoga By Nature</h4></a>
+    <a href="#"><img src="./Images/E.jpg" height="150"><h4>Yoga,Meditation&Relaxation</h4></a>
+    <a href="#"><img src="./Images/F.jpg" height="150"><h4>Yogaland Podcast</h4></a>
+    <a href="#"><img src="./Images/Home/TP.jpg" height="150"><h4>Yoga for beginners</h4></a>
+    
+
+</div>
+<div class="res">
+    <h2>Contact us.</h2>
+    <hr class="line">
+</div>
+<body>
+
+    <div class="contact-container">
+      <div class="contact-inner-container">
+    
+        <div class="contact-info-container">
+          <h1 class="contact-heading">AtmaYoga</h1>
+          <p class="contact-description">
+            We're open for any suggestion or just to have a chat.
+          </p>
+          <div class="line"></div>
+    
+          <div class="contact-details">
+            <h3><i class="fa fa-map-maker"></i> Address</h3>
+            <p>Amrita University, Amritanagar, Ettimadai, Tamil Nadu 641112</p>
+          </div>
+          <hr />
+    
+          <div class="contact-details">
+            <h3><i class="fa fa-envelope"></i> Email</h3>
+            <p>Email@Amrita.Com</p>
+          </div>
+          <hr />
+    
+          <div class="contact-details">
+            <h3><i class="fa fa-phone"></i> Lets Talk</h3>
+            <p>+91 000000000</p>
+          </div>
+          <hr />
+    
+          <div class="social-link-container">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
+        </div>
+    
+        <div class="contact-form">
+          <form class="form">
+            <div class="form-group">
+              <input type="text" name="name" class="input-field form-input" placeholder="Name" >
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="input-field form-input" placeholder="Email" >
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" class="input-field form-input" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="input-field submit-btn" value="Submit" >
+            </div>
+          </form>
+        </div>
+    
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+
+</section>
+
+<div id="about" class="about">
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="about-overlay">
+        <h1>About us</h1>
+        <p>    Yoga is essentially a spiritual discipline based on an extremely subtle science, which focuses on bringing harmony between mind and body. It is an art and scince of healthy living. The word ‘Yoga’ is derived from the Sanskrit root ‘Yuj’, meaning ‘to join’ or ‘to yoke’ or ‘to unite’. As per Yogic scriptures the practice of Yoga leads to the union of individual consciousness with that of the Universal Consciousness, indicating a perfect harmony between the mind and body, Man & Nature. According to modern scientists, everything in the universe is just a manifestation of the same quantum firmament. One who experiences this oneness of existence is said to be in yoga, and is termed as a yogi, having attained to a state of freedom referred to as mukti, nirvana or moksha. Thus the aim of Yoga is Self-realization, to overcome all kinds of sufferings leading to 'the state of liberation' (Moksha) or ‘freedom’ (Kaivalya). Living with freedom in all walks of life, health and harmony shall be the main objectives of Yoga practice."Yoga” also refers to an inner science comprising of a variety of methods through which human beings can realize this union and achieve mastery over their destiny.Yoga, being widely considered as an ‘immortal cultural outcome’ of Indus Saraswati Valley civilization – dating back to 2700 B.C., has proved itself catering to both material and spiritual upliftment of humanity.Basic humane values are the very identity of Yoga Sadhana.
+        </p>
+    </div>
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col">
+                <ul>
+                    <i class="fa fa-utensils"></i>
+                    <span>Atma Yoga</span>
+                </ul>
+                <div class="map">
+                    <ul>
+                        <i class="fa fa-map-marker"></i>
+                            <span>Amrita University, Amritanagar, Ettimadai, Tamil Nadu 641112
+                            </span>
+                    </ul>
+                    </div>
+                <div class="mail">
+                    <ul>
+                        <i class="fas fa-inbox"></i>
+                        <span>
+                            email@amrita.com
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>AtmaYoga</h4>
+                <ul>
+                    <li><a href="#" onclick="openAbout()">about us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Payment policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    
+
+                </ul>
+                </div>
+               
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+            
+
+</footer>
+
+<!--Home  ends-->
+
+    
+
+    <!--Java Script-->
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=() => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+        document.querySelector('#search-icon').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector('#close1').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector("#feedback").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+        document.querySelector("#close").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+    var preloader = document.getElementById("loading");
+    function myload() {
+        preloader.style.display="none";
+    }
+
+
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+    
+        btn.onclick = () =>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () =>{
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+    }
+    function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+    var preloader = document.getElementById("loader");
+    
+    function myloader(){
+        preloader.style.display = "none";
+    }
+   
+    </script>
+    
+    <!--JavaScript ends -->
+
+</body>
+</html>

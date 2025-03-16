@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtmaYoga</title>
+    <link rel="icon" href="./Images/Login/icn.png" type="image/icon type">
+<link rel="stylesheet" href="home.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+      /* Loader Styles */
+      .loader-container {
+            display: none; /* Hide loader by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* About Section */
+        .about-container {
+            padding: 50px 20px;
+            background-color: #b8a4a4;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgb(164, 143, 143);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 50px 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .testimonial p {
+            font-size: 16px;
+        }
+        .testimonial .author {
+            text-align: right;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Call-to-Action Section */
+        .cta {
+            padding: 50px 20px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+        }
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #28a745;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background-color: #e0e0e0;
+        }
+</style>
+</head>
+<body onload="myload()">
+<div class="loader-container" id = "loader">
+    <img src="./Images/Home/image_processing20201120-15530-vodl8x.gif">
+    
+</div>
+
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>AtmaYoga</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html" >Team</a>
+            <a href="book.html">Books</a>
+            <a href="./Podcasts&Videos.html">Podcasts&Videos</a>
+            <a href="contact.html" id="feedback">Contact</a>
+            
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+    </header>
+    <div class="back">
+        <div class="container1" id="co1">
+            <div class="post">
+                <div class="text">Thanks for Rating us!</div>
+                <div class="edit">Edit</div>
+                <i class="fas fa-times" id="close"></i>
+        
+            </div>
+            <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <i class="fas fa-times" id="close"></i>
+                <h4></h4>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience"></textarea>
+        
+                </div>
+                
+                <div class="btn">
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+            </div>    
+        </div>
+        </div>
+        <!-- Header section ends-->
+    
+        
+        <form action="" id="search-form">
+            <input type="search" placeholder="search here..." name="" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+            <i class="fas fa-times" id="close1"></i>
+        </form>
+        
+    
+    <body>
+        <div class="about-container">
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p>Welcome to AtmaYoga, your ultimate destination for achieving physical and mental well-being through the ancient practice of yoga. Our mission is to create a serene and supportive environment where individuals can explore the transformative power of yoga and mindfulness.</p>
+                <p>At AtmaYoga, we offer a variety of yoga classes that cater to all levels, from beginners to advanced practitioners. Our experienced and certified instructors are dedicated to guiding you through your yoga journey, ensuring that you achieve your fitness and wellness goals in a safe and nurturing way.</p>
+                <p>Whether you're looking to improve flexibility, build strength, reduce stress, or simply find inner peace, our diverse range of classes, workshops, and retreats are designed to meet your needs. Join us and become part of a vibrant community committed to living a healthier and more balanced life.</p>
+            </div>
+        </div>
+        <!-- About section ends -->
+    
+        <!-- Testimonials section start -->
+        <div class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"AtmaYoga has transformed my life. The instructors are knowledgeable and supportive, and the atmosphere is incredibly welcoming. I've never felt better!"</p>
+                <div class="author">- Sarah K.</div>
+            </div>
+            <div class="testimonial">
+                <p>"I love the variety of classes offered at AtmaYoga. There's something for everyone, whether you're a beginner or an experienced yogi. Highly recommend!"</p>
+                <div class="author">- Michael B.</div>
+            </div>
+        </div>
+        <!-- Testimonials section ends -->
+    
+        <!-- Call-to-Action section start -->
+        <div class="cta">
+            <h2>Ready to Start Your Yoga Journey?</h2>
+            <a href="./login.html">Join Us Now</a>
+        </div>
+        <!-- Call-to-Action section ends -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col">
+                    <ul>
+                        <i class="fa fa-utensils"></i>
+                        <span>AtmaYoga</span>
+                    </ul>
+                    <div class="map">
+                        <ul>
+                            <i class="fa fa-map-marker"></i>
+                                <span>Amrita University, Amritanagar, Ettimadai, Tamil Nadu 641112
+                                </span>
+                        </ul>
+                        </div>
+                    <div class="mail">
+                        <ul>
+                            <i class="fas fa-inbox"></i>
+                            <span>
+                                email@amrita.com
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>AtmaYoga</h4>
+                    <ul>
+                        <li><a href="#" onclick="openAbout()">about us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Payment policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        
+    
+                    </ul>
+                    </div>
+                   
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+                </div>
+                
+    
+    </footer>
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=() => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+        document.querySelector('#search-icon').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector('#close1').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector("#feedback").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+        document.querySelector("#close").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+    var preloader = document.getElementById("loading");
+    function myload() {
+        preloader.style.display="none";
+    }
+
+
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+    
+        btn.onclick = () =>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () =>{
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+    }
+    function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+    var preloader = document.getElementById("loader");
+    
+    function myloader(){
+        preloader.style.display = "none";
+    }
+   
+    </script>
+    
+    <!--JavaScript ends -->
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Bliss</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #c89fb6;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ecf0f1;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            color:#c8dff5;
+        }
+
+        /* Additional styles */
+        .form-container {
+            margin: 0 auto;
+            width: 50%; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">YOGA BLISS</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="Podcasts&Videos.html">Podcasts&Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <p>Yoga is the perfect opportunity to be curious about who you are.</p>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h3 style="font-style:inherit;">Personal Information</h3>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <p>NAME<span style="color:rgb(0, 0, 0)"></span></p>
+            <table>
+                <tr>
+                    <td>First Name <span id="firstError"></span></td>
+                    <td>Last Name <span id="lastError"></span></td>
+                </tr>                    
+                <tr>
+                    <td><input type="text" name="firstname" id="firstname" placeholder="First Name" style="width: 330px;height: 45px ;border-radius: 5px;"></td>
+                    <td><input type="text" name="lastname" id="lastname" placeholder="Last Name" style="width: 330px;height:  45px ;border-radius: 5px;"></td>
+                </tr>
+            </table> 
+            <p>EMAIL</span><span id="emailError" style="color:red"></span><br></p>
+            <p><input type="email" id="email" placeholder="ex: myname@gmail.com" style="width: 675px;height: 45px ;border-radius: 5px;"><br></p>
+            <p>CONTACT NUMBER</span><span id="mobileError" style="color:red"></span><br></p>
+            <p><input type="tel" name="Contact number" id="mobile" maxlength="10" placeholder="Contact number" style="width: 675px;height: 45px ;border-radius: 5px;"><br></p>
+            <p>SUBJECT</span><span id="subjectError" style="color:red"></span><br></p>
+            <select id="myselect" style="width: 680px;height: 45px ;border-radius: 5px;" >
+                <option>Books</option>
+                <option>Video</option>
+                <option>Podcasts</option>
+            </select><br>
+            <p>ADDRESS</span><span id="addressError" style="color:red"></span><br><br>
+            <textarea cols="90" rows="6" id="address" style="border-radius: 5px;">Enter your address</textarea></p>
+            <br>
+            <p><h3>UPLOAD WORKS <span style="color: red">(mandatory)</span><span id="uploadError" style="color:red"></span></h3></p>
+            <p><input type="file" name="upload" id="upload"></p>
+            <br>
+            <p><h3>TERMS AND CONDITIONS:<br></h3><span id="checkError"></span></p>
+            <p>I certify that I am the rightful owner of the uploaded photos and have the necessary permissions to share them.</p>
+            <p>I grant permission to the website to use and display the uploaded photos for promotional purposes.</p>
+            <p><label><input type="checkbox" id="tc" name="tc"> I agree to the terms and conditions.</label></p>
+            <br>
+            <br>
+            <label><input type="submit" name="submit" style="width: 20%;height: 50px;border-radius: 5px;border-width: 5px;"></label>
+        </form>
+    </div>
+
+    <p style="font-size: medium;text-align: center;">© 2022 YOGA BLISS. All Rights Reserved<br><a href="https://www.instagram.com/stevemccurryofficial/#"><img src="insta.png"></a> <a href="https://www.youtube.com/watch?v=tFxPDLt88L0"><img src="youtube.png"></a> </p>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstname").value.trim();
+            var lastName = document.getElementById("lastname").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var mobile = document.getElementById("mobile").value.trim();
+            var address = document.getElementById("address").value.trim();
+            var upload = document.getElementById("upload").value.trim();
+            var tc = document.getElementById("tc").checked;
+
+            var isValid = true;
+
+            if (firstName === "") {
+                document.getElementById("firstError").innerText = "First name is required";
+                isValid = false;
+            } else {
+                document.getElementById("firstError").innerText = "";
+            }
+
+            if (lastName === "") {
+                document.getElementById("lastError").innerText = "Last name is required";
+                isValid = false;
+            } else {
+                document.getElementById("lastError").innerText = "";
+            }
+
+            if (email === "" || !validateEmail(email)) {
+                document.getElementById("emailError").innerText = "Valid email is required";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").innerText = "";
+            }
+
+            if (mobile === "" || !validateMobile(mobile)) {
+                document.getElementById("mobileError").innerText = "Valid mobile number is required";
+                isValid = false;
+            } else {
+                document.getElementById("mobileError").innerText = "";
+            }
+
+            if (address === "") {
+                document.getElementById("addressError").innerText = "Address is required";
+                isValid = false;
+            } else {
+                document.getElementById("addressError").innerText = "";
+            }
+
+            if (upload === "") {
+                document.getElementById("uploadError").innerText = "Upload is required";
+                isValid = false;
+            } else {
+                document.getElementById("uploadError").innerText = "";
+            }
+
+            if (!tc) {
+                document.getElementById("checkError").innerText = "You must agree to terms and conditions";
+                isValid = false;
+            } else {
+                document.getElementById("checkError").innerText = "";
+            }
+
+            return isValid;
+        }
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+        function validateMobile(mobile) {
+            var re = /^[0-9]{10}$/;
+            return re.test(mobile);
+        }
+    </script>
+</body>
+</html>

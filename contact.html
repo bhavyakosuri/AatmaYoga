@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtmaYoga</title>
+    <link rel="icon" href="./Images/Login/icn.png" type="image/icon type">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        img {
+            width: 150px;
+            height: 250px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .redirectButton {
+            background-color:#abcced; /* Cream color background */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .yoga-form {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+        .yoga-form h2 {
+            text-align: center;
+            color: #333;
+        }
+        .yoga-form p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .yoga-form input[type="text"],
+        .yoga-form input[type="email"],
+        .yoga-form textarea,
+        .yoga-form select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .yoga-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #abcced; /* Custom button color */
+            color: #fff;
+            cursor: pointer;
+        }
+        .yoga-form input[type="submit"]:hover {
+            background-color:#42667e; /* Custom button hover color */
+        }
+        .yoga-form span.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>AtmaYoga</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="book.html">Books</a>
+            <a href="./Podcasts&Videos.html">Podcasts&Videos</a>
+            <a href="contact.html" id="feedback">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+        </div>
+    </header>
+
+    <form id="contact-form" class="yoga-form" onsubmit="return handleSubmit(event)">
+        <br>
+        <h2>Get in touch with us</h2>
+        <p>First Name</p>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required>
+        <p>Last Name</p>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter last name" required>
+        <p>Email</p>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <p>Mobile</p>
+        <input type="text" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+        <p>Subject</p>
+        <select id="myselect" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="General Query">General Query</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Yoga Classes">Yoga Classes</option>
+            <option value="Events">Events</option>
+        </select>
+        <p>Message</p>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        <input type="submit" value="Submit">
+        <p style="padding: left 10%;line-height: 2.5;text-align: justify;">"Namaste! We extend a warm invitation to all yoga instructors and teachers, as well as individuals deeply passionate about the practice, to contribute to our community platform. Our mission is to nurture a space that celebrates the wisdom and creativity of our yoga community.As we strive to cultivate an enriching environment, we welcome yoga instructors and teachers to share their expertise and insights. Whether it's instructional videos, insightful podcasts, or inspirational works, your contributions play a vital role in fostering growth and connection within our community.Together, let us embark on a journey of learning, sharing, and empowerment. If you are an instructor or teacher and would like to contribute your content, please click the link below to access the upload portal. This is your opportunity to showcase your unique perspective and enrich the lives of fellow practitioners.We look forward to witnessing the collective wisdom and creativity of our esteemed instructors and teachers. Thank you for being an integral part of our vibrant yoga community."</p>
+        <br><a href="yoga02.html" style="color:black;font-size: large;"><u>Click here to register and upload your works.</u></a></p>
+    </form>
+   
+
+    <script>
+        async function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Form data collection
+            const formData = {
+                firstname: document.getElementById("firstname").value.trim(),
+                lastname: document.getElementById("lastname").value.trim(),
+                email: document.getElementById("email").value.trim(),
+                mobile: document.getElementById("mobile").value.trim(),
+                subject: document.getElementById("myselect").value,
+                message: document.getElementById("message").value.trim()
+            };
+
+            // Form submission to the server
+            try {
+                const response = await fetch('http://localhost:3000/submit-form', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    alert('Form data saved successfully.'); // Success alert
+                } else {
+                    alert('Error saving form data.'); // Error alert
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error occurred while submitting the form.'); // Error alert
+            }
+        }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col">
+                    <ul>
+                        <i class="fa fa-utensils"></i>
+                        <span>AtmaYoga</span>
+                    </ul>
+                    <div class="map">
+                        <ul>
+                            <i class="fa fa-map-marker"></i>
+                                <span>Amrita University, Amritanagar, Ettimadai, Tamil Nadu 641112
+                                </span>
+                        </ul>
+                        </div>
+                    <div class="mail">
+                        <ul>
+                            <i class="fas fa-inbox"></i>
+                            <span>
+                                email@amrita.com
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Atma Yoga</h4>
+                    <ul>
+                        <li><a href="#" onclick="openAbout()">about us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Payment policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        
+    
+                    </ul>
+                    </div>
+                   
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+                </div>
+                
+    
+    </footer>
+</body>
+</html>

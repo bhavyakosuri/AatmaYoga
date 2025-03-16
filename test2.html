@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - YogaBliss</title>
+    <link rel="icon" href="icon2.jpg" type="image/icon type">
+    <link rel="stylesheet" href="css1.css">
+    <style>
+        /* Additional or customized CSS styles */
+        /* You can customize further as per your design requirements */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('yoga-bg.jpg'); /* Background image specific to yoga */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        /* Customize styles for the yoga contact form */
+        /* You can further customize these styles as needed */
+        .yoga-form {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+        .yoga-form h2 {
+            text-align: center;
+            color: #333;
+        }
+        .yoga-form p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .yoga-form input[type="text"],
+        .yoga-form input[type="email"],
+        .yoga-form textarea,
+        .yoga-form select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .yoga-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #00bcd4; /* Custom button color */
+            color: #fff;
+            cursor: pointer;
+        }
+        .yoga-form input[type="submit"]:hover {
+            background-color: #008ba3; /* Custom button hover color */
+        }
+        .yoga-form span.error {
+            color: red;
+        }
+    </style>
+    <script>
+        function validate() {
+            var firstName = document.getElementById("firstname").value.trim();
+            var lastName = document.getElementById("lastname").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var mobile = document.getElementById("mobile").value.trim();
+            var subject = document.getElementById("myselect").value;
+            var message = document.getElementById("message").value.trim();
+
+            var isValid = true;
+
+            // Reset error messages
+            document.getElementById("firstError").innerText = "";
+            document.getElementById("lastError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("mobileError").innerText = "";
+            document.getElementById("subjectError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+
+            // Validate first name
+            if (firstName === "") {
+                document.getElementById("firstError").innerText = "First name is required";
+                isValid = false;
+            }
+
+            // Validate last name
+            if (lastName === "") {
+                document.getElementById("lastError").innerText = "Last name is required";
+                isValid = false;
+            }
+
+            // Validate email
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "" || !emailPattern.test(email)) {
+                document.getElementById("emailError").innerText = "Valid email is required";
+                isValid = false;
+            }
+
+            // Validate mobile number
+            var mobilePattern = /^[0-9]{10}$/;
+            if (mobile === "" || !mobilePattern.test(mobile)) {
+                document.getElementById("mobileError").innerText = "Valid mobile number is required";
+                isValid = false;
+            }
+
+            // Validate subject
+            if (subject === "select") {
+                document.getElementById("subjectError").innerText = "Please select a subject";
+                isValid = false;
+            }
+
+            // Validate message
+            if (message === "") {
+                document.getElementById("messageError").innerText = "Message is required";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="yoga-form">
+        <h2>Contact Us - YogaBliss</h2>
+        <form action="#" onsubmit="return validate()">
+            <p>Name <span style="color: darkgrey">(required)</span></p>
+            <table>
+                <tr>
+                    <td>First Name <span id="firstError" class="error"></span></td>
+                    <td>Last Name <span id="lastError" class="error"></span></td>
+                </tr>                    
+                <tr>
+                    <td><input type="text" name="firstname" id="firstname"></td>
+                    <td><input type="text" name="lastname" id="lastname"></td>
+                </tr>
+            </table> 
+            <p>Email <span style="color: darkgrey">(required)</span><span id="emailError" class="error"></span></p>
+            <p><input type="email" id="email" name="email"></p>
+            <p>Mobile number <span style="color: darkgrey">(required)</span><span id="mobileError" class="error"></span></p>
+            <p><input type="text" name="mobile" id="mobile"></p>
+            <p>Subject <span style="color: darkgrey">(required)</span><span id="subjectError" class="error"></span></p>
+            <select id="myselect" name="subject">
+                <option value="select">Select</option>
+                <option value="class_inquiry">Class Inquiry</option>
+                <option value="membership">Membership</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <p>Message <span style="color: darkgrey">(required)</span><span id="messageError" class="error"></span></p>
+            <textarea cols="30" rows="6" id="message" name="message"></textarea>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <br>
+        <p style="padding: left 10%;line-height: 2.5;text-align: justify;">"Namaste! We extend a warm invitation to all yoga instructors and teachers, as well as individuals deeply passionate about the practice, to contribute to our community platform. Our mission is to nurture a space that celebrates the wisdom and creativity of our yoga community.As we strive to cultivate an enriching environment, we welcome yoga instructors and teachers to share their expertise and insights. Whether it's instructional videos, insightful podcasts, or inspirational works, your contributions play a vital role in fostering growth and connection within our community.Together, let us embark on a journey of learning, sharing, and empowerment. If you are an instructor or teacher and would like to contribute your content, please click the link below to access the upload portal. This is your opportunity to showcase your unique perspective and enrich the lives of fellow practitioners.We look forward to witnessing the collective wisdom and creativity of our esteemed instructors and teachers. Thank you for being an integral part of our vibrant yoga community."</p>
+        <br><a href="yoga02.html" style="color:black;font-size: large;"><u>Click here to register and upload your works.</u></a></p>
+    </div>
+    <p style="text-align: center; color: #fff;">&copy; 2024 YogaBliss. All Rights Reserved</p>
+
+</body>
+</html>

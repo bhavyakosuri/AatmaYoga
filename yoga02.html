@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtmaYoga</title>
+    <link rel="icon" href="./Images/Login/icn.png" type="image/icon type">
+<link rel="stylesheet" href="home.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body onload="myload()">
+<div class="loader-container" id = "loader">
+    <img src="./Images/Home/image_processing20201120-15530-vodl8x.gif">
+    
+</div>
+<style>
+      .form-container {
+            margin: 0 auto;
+            width: 50%; /* Adjust the width as needed */
+        }
+</style>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>AtmaYoga</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html" >Team</a>
+            <a href="book.html">Books</a>
+            <a href="./Podcasts&Videos.html">Podcasts&Videos</a>
+            <a href="contact.html" id="feedback">Contact</a>
+            
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+    </header>
+    <div class="back">
+        <div class="container1" id="co1">
+            <div class="post">
+                <div class="text">Thanks for Rating us!</div>
+                <div class="edit">Edit</div>
+                <i class="fas fa-times" id="close"></i>
+        
+            </div>
+            <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <i class="fas fa-times" id="close"></i>
+                <h4></h4>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience"></textarea>
+        
+                </div>
+                
+                <div class="btn">
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+            </div>    
+        </div>
+        </div>
+        <!-- Header section ends-->
+    <br>
+    <br>
+    <br>
+    <div class="form-container">
+        <!-- Paste the existing content of the second HTML file here -->
+        <!-- Adjusted form code to fit within the container -->
+         <br>
+         <br>
+         <br>
+        <h3 style="font-style:inherit;">Personal Information</h3>
+        <form action="contact1(1).html" onsubmit="return validate()">
+            <!-- Form fields --><p>NAME<span style="color:rgb(0, 0, 0)"></span></p>
+            <table>
+                                  
+                <tr>
+                    <td><input type="text" name="firstname" id="firstname" placeholder="First Name" style="width: 330px;height: 45px ;border-radius: 5px;"></td>
+                    <td><input type="text" name="lastname" id="lastname" placeholder="Last Name" style="width: 330px;height:  45px ;border-radius: 5px;"></td>
+                </tr>
+            </table>
+            <br> 
+            <p>EMAIL</span><span id="emailError" style="color:red"></span><br></p>
+            <p><input type="email" id="email" placeholder="ex:myname@gmail.com"style="width: 660px;height: 45px ;border-radius: 5px;"><br></p>
+           <br> <p>CONTACT NUMBER</span><span id="mobileError" style="color:red"></span><br></p>
+            <p><input type="tel" name="Contact number" id="mobile" maxlength="10" placeholder="Contact number" style="width: 660px;height: 45px ;border-radius: 5px;"><br></p>
+            <br><p>SUBJECT</span><span id="subjectError" style="color:red"></span><br></p>
+            <select id="myselect" style="width: 660px;height: 45px ;border-radius: 5px;" >
+                <option>Books</option>
+                <option>Video</option>
+                <option>Podcasts</option>
+            </select><br><br>
+            <p>ADDRESS</span><span id="addressError" style="color:red"></span><br>
+            <textarea cols="100" rows="6" id="address" style="border-radius: 5px;">Enter your address</textarea></p>
+            <br>
+            <p><h3>UPLOAD WORKS <span style="color: red">(mandatory)</span><span id="uploadError" style="color:red"></span></h3></p>
+            <p><input type="file" name="upload" id="upload"></p>
+            <br>
+            <p><h3>TERMS AND CONDITIONS:<br></h3><span id="checkError"></span></p>
+            <p>I certify that I am the rightful owner of the uploaded photos and have the necessary permissions to share them.</p>
+            <p>I grant permission to the website to use and display the uploaded photos for promotional purposes.</p>
+            <p><label><input type="checkbox" id="tc" name="tc"> I agree to the terms and conditions.</label></p>
+            <br>
+            <br>
+            <label><input type="submit" name="submit" style="width: 20%;height: 30px;border-radius: 5px;border-width: 5px;"></label>
+            <br>
+            <br>
+            <br>
+        </form>
+    </div>
+        
+        <form action="" id="search-form">
+            <input type="search" placeholder="search here..." name="" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+            <i class="fas fa-times" id="close1"></i>
+        </form>
+        
+    
+    <body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col">
+                    <ul>
+                        <i class="fa fa-utensils"></i>
+                        <span>AtmaYoga</span>
+                    </ul>
+                    <div class="map">
+                        <ul>
+                            <i class="fa fa-map-marker"></i>
+                                <span>Amrita University, Amritanagar, Ettimadai, Tamil Nadu 641112
+                                </span>
+                        </ul>
+                        </div>
+                    <div class="mail">
+                        <ul>
+                            <i class="fas fa-inbox"></i>
+                            <span>
+                                email@amrita.com
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>AtmaYoga</h4>
+                    <ul>
+                        <li><a href="#" onclick="openAbout()">about us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Payment policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        
+    
+                    </ul>
+                    </div>
+                   
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+                </div>
+                
+    
+    </footer>
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=() => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+        document.querySelector('#search-icon').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector('#close1').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector("#feedback").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+        document.querySelector("#close").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+    var preloader = document.getElementById("loading");
+    function myload() {
+        preloader.style.display="none";
+    }
+
+
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+    
+        btn.onclick = () =>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () =>{
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+    }
+    function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+    var preloader = document.getElementById("loader");
+    
+    function myloader(){
+        preloader.style.display = "none";
+    }
+   
+    </script>
+    
+    <!--JavaScript ends -->
+
+</body>
+</html>

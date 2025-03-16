@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Bliss</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #476a72;
+        }
+
+        header {
+            background-color: #E3F4F4;
+            color: #476a72;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #476a72;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            color:#476a72
+            
+        }
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #476a72;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .book {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 75%;
+    }
+
+    .book1 {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 75%;
+    }
+
+    .book3 {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 93%;
+      height:554px;
+    }
+
+    .book4 {
+      background-color: #fff;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 75%;
+      height: 550px;
+    }
+    
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #20201e;
+    }
+
+    img {
+      width: 150px;
+      height: 250px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .redirectButton {
+      background-color: #fffdd0; /* Cream color background */
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    #button1 {
+      background-color: #476a72; /* Button 1 background color */
+      color: #fff; /* Button 1 text color */
+    }
+
+    #button2 {
+      background-color: #476a72; /* Button 2 background color */
+      color: #fff; /* Button 2 text color */
+    }
+
+    #button3 {
+      background-color:#476a72; /* Button 3 background color */
+      color: #fff; /* Button 3 text color */
+    }
+    #button4 {
+      background-color: #476a72; /* Button 1 background color */
+      color: #fff; /* Button 1 text color */
+    }
+
+    #button5 {
+      background-color:#476a72; /* Button 2 background color */
+      color: #fff; /* Button 2 text color */
+    }
+
+    #button6 {
+      background-color:#476a72; /* Button 3 background color */
+      color: #fff; /* Button 3 text color */
+    }
+    .book2 {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 10px;
+      width: 100%;
+      height: 545px;
+    }
+    </style>
+   <script>
+    // JavaScript for handling button click and redirection
+    function redirectToPage(page) {
+      // Redirect to the specified page
+      window.location.href = page;
+    }
+  </script>
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">YOGA BLISS</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="Podcasts&Videos.html">Podcasts&Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+           
+            </ul>
+        </nav>
+        <div class="hero" style="size: 2ch;">
+            <p style="font-size: large;color: #476a72;"><b>Yoga is the art of awareness on the canvas of body, mind, and soul</b></p>
+        </div>
+    </header>
+    <section>
+        <table>
+            <tr>
+            
+                <td ><div class="book">
+                    <img src="book1.png" alt="Yoga for Beginners" style="width: 180px;">
+                    <h2>Yoga Philosophy</h2>
+                    <p><strong>Title:</strong>The Yoga Sutras of Patanjali</p>
+                    <p><strong>Author:</strong>Swami Satchidananda</p>
+                    <p><strong>Year Published:</strong>1990</p>
+                    <p><strong>Number of pages:</strong>272</p>
+                    <p><button id="button1" class="redirectButton" onclick="redirectToPage('page1.html')">Get Book</button></p>
+                <td ><div class="book">
+                    <img src="book2.png" alt="Yoga for Beginners">
+                    <h2>Pranayama</h2>
+                    <p><strong>Title:</strong>The Breathing Book</p>
+                    <p><strong>Author:</strong>Donna Farhi</p>
+                    <p><strong>Year Published:</strong>2003-10-18</p>
+                    <p><strong>Number of pages:</strong>238</p>
+                    <p><button id="button2" class="redirectButton" onclick="redirectToPage('page2.html')">Get Book</button></p>
+                  </div></td>
+                <td><div class="book2">
+                    <img src="book3.png" alt="Yoga for Beginners">
+                    <h2>Asana and Postures</h2>
+                    <p><strong>Title:</strong>Light on Yoga</p>
+                    <p><strong>Author:</strong>B.K.S. Iyengar</p>
+                    <p><strong>Year Published:</strong>01-01-1966</p>
+                    <p><strong>Number of pages:</strong>544</p>
+                    <p><button id="button3" class="redirectButton" onclick="redirectToPage('page3.html')">Get Book</button></p>
+                  </div></td>
+            </tr>
+            
+        
+            <tr>
+                <td ><div class="book1">
+                    <img src="book4.png" alt="Yoga for Beginners">
+                    <h2>Meditation and Mindfulness</h2>
+                    <p><strong>Title:</strong>The Miracle of Mindfulness </p>
+                    <p><strong>Author:</strong>Thich Nhat Hanh</p>
+                    <p><strong>Year Published:</strong>01-01-1975</p>
+                    <p><strong>Number of pages:</strong>140</p>
+                    <p><button id="button4" class="redirectButton" onclick="redirectToPage('page4.html')">Get Book</button></p>
+
+                  </div></td>
+                <td><div class="book4">
+                    <img src="book5.png" width="200%" alt="Yoga for Beginners">
+                    <h2>Anatomy and Physiology</h2>
+                    <p><strong>Name:</strong>The Key Poses of Hatha Yoga</p>
+                    <p><strong>Author:</strong>Ray Long</p>
+                    <p><strong>Year Published:</strong>15-02-2008</p>
+                    <p><strong>Number of pages:</strong>214</p>
+                    <p><button id="button5" class="redirectButton" onclick="redirectToPage('page5.html')">Get Book</button></p>
+
+                  </div></td>
+                <td><div class="book3">
+                    <img src="book6.png" alt="Yoga for Beginners">
+                    <h2>Yoga Lifestyle</h2>
+                    <p><strong>Name:</strong>The Yamas & Niyamas</p>
+                    <p><strong>Author:</strong>Deborah Adele</p>
+                    <p><strong>Year Published:</strong>01-01-2009</p>
+                    <p><strong>Number of pages:</strong>192</p>
+                    <p><button id="button6" class="redirectButton" onclick="redirectToPage('page6.html')">Get Book</button></p>
+
+                  </div></td>
+            </tr>
+            
+        </table>
+        
+        
+    
+      </section>
+    
+
+
+</body>
+</html>
