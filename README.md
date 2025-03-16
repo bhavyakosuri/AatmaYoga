@@ -42,15 +42,15 @@ Highlights:
 
 🚀 Getting Started
 1. Clone the repository:
-git clone https://github.com/your-username/Yoga-Project.git
+bash
+https://github.com/bhavyakosuri/AatmaYoga.git
 cd Yoga-Project
-
 2. Install Node dependencies:
+bash
 npm install
-
 3. Start the Node server:
+bash
 node server.js
-
 4. Access the application:
 Open the YogaP folder and run home.html in your browser.
 
@@ -63,5 +63,4 @@ Assets: PNG, JPG images, podcasts, videos, and e-books
 
 💡 About the Team
 This project was collaboratively built by a team of three, focused on delivering a wellness platform combining AI, multimedia, and yoga expertise.
-
 
