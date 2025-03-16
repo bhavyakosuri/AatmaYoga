@@ -28,6 +28,7 @@ Highlights:
 ├── server.js               # Backend server file (Node.js)
 ├── testConnection.js       # Testing DB/server connection
 
+![image](https://github.com/user-attachments/assets/34c8ce50-fcae-4c55-9a89-e3a05549b8f9)
 
 ⚙️ Features:
 🌟 Mood-specific yoga recommendations
